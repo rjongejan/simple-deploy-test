@@ -3,7 +3,7 @@ language: python
 python: "2.7"
 
 addons:
-  ssh_known_hosts: 95.46.198.190
+  ssh_known_hosts: 95.46.198.190:14321
 
 before_deploy:
   - openssl aes-256-cbc -K $encrypted_ad35a7dd52a2_key -iv $encrypted_ad35a7dd52a2_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
